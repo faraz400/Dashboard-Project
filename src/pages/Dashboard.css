@@ -1,0 +1,11 @@
+.dashboard-widgets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  background-color: var(--bg-color); /* Use theme background */
+  color: var(--text-color); /* Use theme text color */
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}

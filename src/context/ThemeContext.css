@@ -1,0 +1,71 @@
+/* Light Theme */
+.light {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  /* header bg variable */
+  --header-bg: #a09898;  
+  --button-bg: #007bff;
+  --button-text-color: #ffffff;
+}
+
+/* Dark Theme */
+.dark {
+  --bg-color: #1e1e1e;
+  --text-color: #ffffff;
+  --header-bg: #333333;
+  --button-bg: #ffffff;
+  --button-text-color: #000000;
+}
+
+/* Global Styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+/* 
+.heeader {
+  background-color: var(--header-bg);
+  color: var(--text-color);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .btn {
+  background-color: var(--button-bg);
+  color: var(--button-text-color);
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header .btn:hover {
+  opacity: 0.8;
+} */
+
+
+/* sidebar */
+.light {
+  /* sidebar bg */
+  --sidebar-bg: #a09898;
+  --text-color: #000000;
+  --hover-bg-color: #e0e0e0;
+  --hover-text-color: #007bff;
+  --selected-bg-color: #d3d3d3;
+  --selected-text-color: #000000;
+}
+
+/* Dark Theme */
+.dark {
+  --sidebar-bg: #333333;
+  --text-color: #ffffff;
+  --hover-bg-color: #444444;
+  --hover-text-color: #cccccc;
+  --selected-bg-color: #555555;
+  --selected-text-color: #ffffff;
+}
+
+

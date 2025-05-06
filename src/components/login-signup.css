@@ -1,0 +1,22 @@
+.mycustomclass{
+    background-color: rgb(241, 245, 245);
+    border: 5px solid  rgb(250, 243, 243);
+    height: auto;
+  
+}
+.labels{
+    color: black;
+    font-size: 20px
+}
+.customform{
+    width: 100%;  
+}
+/* right side text design */
+.loginheading {
+    font-weight: bold;
+    
+  }
+  .lead {
+    font-size: 1.1rem;
+  }
+  

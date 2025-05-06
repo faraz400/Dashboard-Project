@@ -1,0 +1,131 @@
+.heeader {
+  background-color: var(--header-bg, #257bb4); /* Use theme variable */
+  color: var(--text-color, white); /* Use theme variable */
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease; /* Smooth transition for theme changes */
+}
+.header-title {
+  margin-left: 0; /* Ensure the title is aligned to the left */
+  font-size: 26px; /* Adjust font size if needed */
+  font-weight: bold; /* Make the title bold */
+  color: var(--text-color, white); /* Use theme variable for text color */
+}
+.headbutton button{
+  margin-right: 10px;
+}
+
+.sidebar {
+  background-color: var(--sidebar-bg, #e0e0e0); /* Use theme variable */
+  color: var(--text-color, black); /* Use theme variable */
+  height: 100vh;
+  transition: all 0.3s ease; /* Smooth transition for theme changes */
+}
+
+.sidebar .ant-menu {
+  background-color: var(--sidebar-bg, #e0e0e0); /* Use theme variable */
+  color: var(--text-color, black); /* Use theme variable */
+}
+
+.sidebar .ant-menu-item {
+  color: var(--text-color, black); /* Use theme variable */
+}
+
+.sidebar .ant-menu-item:hover {
+  background-color: var(--hover-bg-color, #d3d3d3); /* Use theme variable */
+  color: var(--hover-text-color, #007bff); /* Use theme variable */
+}
+
+.sidebar .ant-menu-item-selected {
+  background-color: var(--selected-bg-color, #c0c0c0); /* Use theme variable */
+  color: var(--selected-text-color, #000000); /* Use theme variable */
+}
+
+.sidebar .ant-menu-item-icon {
+  color: var(--text-color, black); /* Use theme variable */
+}
+
+/* todo-widget */
+/* Button styling */
+.todo-widget{
+  border: 1px solid rgb(201, 198, 198);
+  padding: 4px 10px;
+  border-radius: 6px;
+  justify-content: center;
+}
+.todo{
+  display: flex;
+}
+.todoaddbutton {
+  background-color: #cbd4d4; /* Ant Design primary color */
+  color: rgb(39, 38, 38);
+  border: none;
+  padding: 5px 16px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todoaddbutton:hover {
+  background-color: #8a9096;
+}
+
+/* Input with light border */
+.todo-input {
+  border: 1px solid #c5bfbf; /* light gray */
+  padding: 4px;
+  border-radius: 4px;
+  outline: none;
+  width: 250px;
+}
+
+.todo-input:focus {
+  
+  box-shadow: 0 0 0 2px rgba(21, 22, 22, 0.2);
+}
+
+/* Container for the list */
+.todo-list {
+  margin-top: 10px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* List styling */
+.todo-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Individual todo item */
+.todo-list li {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  padding: 2px 10px;
+  margin-bottom: 4px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+/* Delete button styling */
+.todo-list button {
+  background-color: #cbd4d4;
+  color: rgb(41, 38, 38);
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  
+}
+
+.todo-list button:hover {
+  background-color: #d9363e;
+}
