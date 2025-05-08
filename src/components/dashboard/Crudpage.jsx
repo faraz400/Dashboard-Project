@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
 import { PlusOutlined } from "@ant-design/icons"; // Ant icon for add
 import { useFormik } from "formik"; // Import useFormik hook
 import * as Yup from "yup"; // Import Yup for validation
+import "./head-sidebar.css";
 
 const Crud = () => {
     const [open, setOpen] = useState(false); // State for modal open/close
@@ -27,7 +28,7 @@ const Crud = () => {
         },
         validationSchema: Yup.object({ //  Yup validation schema
             name: Yup.string().required("Name is required").min(2),
-            number: Yup.string().required("Number is required"),
+            number: Yup.string().required("Number is required").min(11),
             email: Yup.string().email("Invalid email").required("Email is required")
         }),
         onSubmit: (values) => { //  On form submit
@@ -57,6 +58,7 @@ const Crud = () => {
     };
 
     return (
+        <div className="content">
         <div className="container">
             <div className="d-flex justify-content-between align-items-center my-3">
                 <h1>CRUD App</h1>
@@ -104,6 +106,7 @@ const Crud = () => {
                             name="name"
                             className="form-control"
                             onChange={formik.handleChange} //  Jab user kuch type kare, Formik ka handleChange uss naye value ko update kara.
+                            onBlur={formik.handleBlur}  //check the validation is not true show error
                             value={formik.values.name} //  Formik value
                         />
                         {formik.touched.name && formik.errors.name && (
@@ -115,14 +118,16 @@ const Crud = () => {
                     <div className="mb-3">
                         <label htmlFor="number">Number</label>
                         <input
-                            type="text"
+                            type="number"
                             name="number"
                             className="form-control"
                             onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
                             value={formik.values.number} 
                         />
-                        {formik.errors.number && formik.touched.number ?
-                         <samll>{formik.errors.number}</samll> : null}
+                        {formik.touched.number && formik.touched.number &&(
+                         <small className="text-danger">{formik.errors.number}</small>
+                        )}
                     </div>
 
                     {/*  Email field */}
@@ -133,9 +138,10 @@ const Crud = () => {
                             name="email"
                             className="form-control"
                             onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
                             value={formik.values.email}
                         />
-                        {formik.email && formik.errors.email && (
+                        {formik.touched.email && formik.touched.email && (
                             <small className="text-danger">{formik.errors.email}</small>
                         )}
                     </div>
@@ -146,6 +152,7 @@ const Crud = () => {
                     </button>
                 </form>
             </Modal>
+        </div>
         </div>
     );
 };

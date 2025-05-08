@@ -1,9 +1,10 @@
 /* Light Theme */
+/* content area background color */
 .light {
-  --bg-color: #ffffff;
+  --bg-color: #f1ebeb;
   --text-color: #000000;
   /* header bg variable */
-  --header-bg: #a09898;  
+  --header-bg: #595e5e;  
   --button-bg: #007bff;
   --button-text-color: #ffffff;
 }
@@ -50,11 +51,11 @@ body {
 /* sidebar */
 .light {
   /* sidebar bg */
-  --sidebar-bg: #a09898;
+  --sidebar-bg: #666d79;
   --text-color: #000000;
-  --hover-bg-color: #e0e0e0;
-  --hover-text-color: #007bff;
-  --selected-bg-color: #d3d3d3;
+  --hover-bg-color: rgb(75, 72, 72);
+  --hover-text-color: white;
+  --selected-bg-color:rgb(75, 72, 72);
   --selected-text-color: #000000;
 }
 

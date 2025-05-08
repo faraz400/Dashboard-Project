@@ -4,12 +4,9 @@ import "./head-sidebar.css"; // Import your CSS file for styling
 import { useNavigate } from "react-router-dom";
 import { ThemeContext } from '../../context/ThemeContext';
 
-
-
-
 const { Header } = Layout; // Import Header from Layout
 
-const Head=()=> {
+const Head=({toggleThemecol ="primary", logoutbutton="danger"})=> { //pass props to button colors
   const navigate = useNavigate(); // Use useNavigate hook to programmatically navigate
   const { theme, toggleTheme}= useContext(ThemeContext);
 
@@ -19,7 +16,7 @@ const Head=()=> {
   };
   const handletoggleTheme = ()=>{
     console.log("current theme");
-    toggleTheme();
+    toggleTheme(); 
   };
   return (
     <Header className={`heeader header-${theme}`}>
@@ -27,12 +24,12 @@ const Head=()=> {
       <div className="header-title  "> 
         Demo Site</div> 
         <div className="headbutton">
-        <button type="button" className="btn btn-primary" onClick={handletoggleTheme}>
+        <button type="button" className={`btn btn-${toggleThemecol}`} onClick={handletoggleTheme}>
           Toggle Theme
         </button>
       <button 
         type="button" 
-        className="btn btn-primary logout-custon-btn" 
+        className={`btn btn-${logoutbutton}`} 
         onClick={handleLogout}
       >
         Logout

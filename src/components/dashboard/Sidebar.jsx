@@ -15,7 +15,7 @@ const Sidebar = () => {
     } else if (key === "2") {
       navigate("/dashboard/crud"); // Navigate to the nested Crud route
     } else if (key === "3") {
-      navigate("/dashboard/setting");
+      navigate("/dashboard/Todolist");
     } else if (key === "4") {
       navigate("/dashboard/theme");
     } else if (key === "5") {
@@ -38,7 +38,7 @@ const Sidebar = () => {
           Crud
         </Menu.Item>
         <Menu.Item key="3" icon={<SettingOutlined />}>
-          Settings
+          Todolist
         </Menu.Item>
         <Menu.Item key="4" icon={<BgColorsOutlined />}>
           Theme

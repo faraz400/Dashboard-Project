@@ -24,13 +24,15 @@ function App() {
               index
               element={
                 <div className="dashboard-widgets">
-                  <Todolist />
+              
                   <AnalyticsChart />
                   <RecentActivities />
+                  <Todolist />
                 </div>
               }
             />
             <Route path="crud" element={<Crud />} /> {/* Nested Crud route */}
+            <Route path="Todolist" element={<Todolist />} />
           </Route>
           <Route path="*" element={<h2>404 - Page Not Found</h2>} />
         </Routes>

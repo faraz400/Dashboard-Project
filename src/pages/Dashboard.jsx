@@ -3,7 +3,8 @@ import { Layout } from "antd";
 import Head from "../components/dashboard/Header";
 import Sidebar from "../components/dashboard/Sidebar";
 import { Outlet } from "react-router-dom"; // Import Outlet for nested routes
-import "./Dashboard.css";
+import "../components/dashboard/head-sidebar.css"; // Corrected path to CSS file
+
 
 const { Content } = Layout;
 
@@ -13,7 +14,7 @@ const Dashboard = () => {
       <Head />
       <Layout>
         <Sidebar />
-        <Content style={{ margin: "20px", padding: "20px" }}>
+        <Content style={{ margin: "20px", padding: "10px" }}>
           <Outlet /> {/* Render nested routes like Crud here */}
         </Content>
       </Layout>
