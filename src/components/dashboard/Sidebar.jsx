@@ -40,9 +40,9 @@ const Sidebar = () => {
         <Menu.Item key="3" icon={<SettingOutlined />}>
           Todolist
         </Menu.Item>
-        <Menu.Item key="4" icon={<BgColorsOutlined />}>
+        {/* <Menu.Item key="4" icon={<BgColorsOutlined />}>
           Theme
-        </Menu.Item>
+        </Menu.Item> */}
         <Menu.Item key="5" icon={<EllipsisOutlined />}>
           Etc
         </Menu.Item>

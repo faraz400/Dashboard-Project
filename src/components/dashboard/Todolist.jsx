@@ -27,7 +27,7 @@ const TodoWidget = () => {
   
     <div className="content">
     <div className="todo-widget">
-      <h4>Todo Management</h4>
+      <h3>Todo Management</h3>
       <div className="user">
         <input
           className="todo-input"

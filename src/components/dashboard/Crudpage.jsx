@@ -61,7 +61,7 @@ const Crud = () => {
         <div className="content">
         <div className="container">
             <div className="d-flex justify-content-between align-items-center my-3">
-                <h1>CRUD App</h1>
+                <h3>Crud App</h3>
                 <button className="btn btn-success" onClick={onOpenModal}>
                     <PlusOutlined /> Add New {/*  Icon with button */}
                 </button>
